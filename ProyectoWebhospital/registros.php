@@ -30,7 +30,7 @@
 
 <body class="bodyprincipal">
 
-	<!-- // Header -->
+	<!-- Header -->
 	<?php
     $currentPage = basename($_SERVER['PHP_SELF']);
     include "headerdos.php";
