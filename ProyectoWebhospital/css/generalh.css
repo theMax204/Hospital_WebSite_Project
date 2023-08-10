@@ -1,0 +1,371 @@
+
+/* variables colores y fuentes */
+:root{
+  --Azul: #003264;
+  --Grisclaro: #CBD6DF;
+  --Gris: #C7C8CA;
+  --Blanco: #FFFFFF;
+  --Negro: #000000;
+  --Fuente:"Oswald";
+}
+
+h2 {
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+  }
+
+p {
+    color: black ;
+    justify-content: center ;
+    font-size: 14px ;
+  }
+
+  /*INICIO de estilos generales del encabezado*/
+
+.bg-colorarriba{
+  background-color: var(--Azul) ;
+  position: sticky ;
+  top: 0 ;
+  z-index: 1000; /* Valor alto para asegurar que aparezca por encima de otros elementos */
+
+
+}
+
+.active{
+  border-bottom: #D9D9D9 solid 2px ;
+  font-size: 18px ;
+}
+
+.menu li a{
+  font-size: 18px ;
+  /*margin-left: -30px;*/
+  margin-left: 3px ;
+  color: white ;
+}
+
+
+
+  /*FINAL de estilos generales del encabezado*/
+
+  /*Inicio de estilos del footer*/
+
+.menufo li a{
+  color: var(--Blanco) ;
+}
+h5{
+  color: var(--Blanco);
+}
+footer{
+  color: var(--Azul);
+  background-color: var(--Azul);
+}
+  /*Final de estilos del footer*/
+
+  /*inicio de contenido*/
+  /*aqui es para justificar el texto*/
+  .card-body {
+    text-align: justify;
+    margin-top: 20px;
+  }
+
+
+  
+  .row.justify-content-center {
+    justify-content: center;
+  }
+  
+  .row.justify-content-center .card {
+    width: 100%;
+  }
+/*aqui se termina el codigo para justificar el texto*/
+
+  /*final de contenido*/
+
+
+
+/*esto va en el header pero se queda en general--------------*/
+.titulomain-card{
+  width: 100%;
+  
+}
+/*Estilos de footer de las letras*/
+/*esto va en el footer pero se queda en general---------------*/
+.footcoletra{
+  color: var(--Blanco);
+  margin-top: 15px;
+}
+/*esto va en el footer pero se queda en general----------------*/
+.hospitalfo{
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}/*esto va en el footer pero se queda en general------------*/
+.hospitalsede{
+  margin-left: 200px;
+}/*esto va en el footer pero se queda en general------------*/
+.hospitalcontac{
+  margin-right: 100px;
+}
+
+/*Estilos de footer de las letras*/
+/*Estilos para el mapa*/
+
+/* Establecer los estilos para cuando el mapa esté visible */
+
+
+
+
+
+
+
+
+
+/*Estilos para el mapa final*/
+/*esto no sé donde va pero luego averiguar--------------*/
+.header-container{
+  display: flex;
+  justify-content: center;
+}
+/*esto no sé donde va pero luego averiguar--------------*/
+
+.d-flex{
+  width: 450px;
+}
+/*lo de abajo es lo que manda mis estilos de la "card" */
+/*esto se quedara en general*/
+.cardbase{
+  border: var(--Negro) solid 1px;
+  padding: 1em;/*relleno*/
+  margin-bottom: 2em;
+  box-shadow: 5px 7px 10px var(--Azul);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  cursor: pointer;
+  background-color: var(--Blanco);
+  text-align: center;
+
+}
+/*esto no sé donde va luego averiguar------------------*/
+.cardregistro{
+  border: var(--Negro) solid 1px;
+  padding: 1em;/*relleno*/
+  margin-bottom: 2em;
+  box-shadow: 5px 7px 10px var(--Azul);
+  background-color: var(--Blanco);
+}
+/*esto no sé que es luego averiguar----------------*/
+.registroform{
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+
+ 
+}
+/*estilos del formulario de inicio y de registro de sesion*/
+
+
+
+
+
+/*esto va para el index aunque es del header puede quedarse en general luego ver donde va------*/
+/*estilo de las flechas del carrusel para las imagenes*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--Azul);
+
+}
+
+/* Cambiar el color de las flechas a verde cuando se pasa el mouse por encima */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: var(--Gris);
+
+}
+/*lo de arriba esto va para el index aunque es del header puede quedarse en general luego ver donde va------*/
+/*estilo de las flechas del carrusel para las imagenes*/
+
+/*final de estilo de animacion de login o reigister*/
+
+
+
+/*esto va en el header pero lo puedo dejar en general-------------------------------*/
+.logoprinc{
+  width: 200px;
+  height: 80px;
+  
+}
+/*esto va en el footer pero lo puedo dejar en general--------------------------------*/
+.logoprinfo{
+  width: 230px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+/*abajo va los estilos del carusel imagenes*/
+/*esto va en el header pero lo puedo dejar en general--------------------------------*/
+.carousel-item {
+  max-width: 2300px; /* Limita el ancho máximo a 1800px */
+  text-align: center; /* Centra horizontalmente el contenido */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+/*esto va en el header pero lo puedo dejar en general--------------------------------*/
+.imgcarusel {
+  width: 2100px; /* Establece el ancho de la imagen */
+  height: 750px; /* Establece la altura de la imagen */
+}
+/*termina los estilos del carrusel imagenes*/
+
+/*aqui va el estilo de la letra de las cartas de servicios*/
+
+
+/*aqui va el estilo de la letra de las cartas de servicios*/
+
+
+
+/*esto no sé a donde va luego averiguar-----------------*/
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/*esto no sé a donde va luego averiguar-----------------*/
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/*esto se puede quedar en general--------------------------*/
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px;
+}
+/*esto se puede quedar en general--------------------------*/
+button.prev {
+  background-color: #ccc;
+  color: #000;
+}
+/*estilos del formulario de inicio y de registro de sesion*/
+/*esto seria algo de registro pero creo que ya no lo necesito borrarlo despues-------------*/
+.contac{
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-right: 400px;
+margin-bottom: 50px;
+}
+
+/*ponerlo en general-------------------------*/
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+/*esto va en general----------------------*/
+.cardbase.show-text .cardText {
+  display: block;
+}
+/*esto va en general----------------------*/
+.cardbase.show-text .cardImage {
+  width: 100px;
+  height: 70px;
+}
+/*esto no se donde va hacer pruebas si no lo necesito o si va en el general----------------*/
+.carta {
+  width: 400px;
+  height: 300px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background-color 0.3s;
+  min-height: 100px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+/*esto se puede quedar en general---------------------------*/
+.bodyprincipal{
+  background-color: var(--Gris) ;
+ }
+
+ /*inicio de codigo para usar la imagen para mostrar los datos cuando se le de click*/
+
+
+
+
+
+/*esto es para el estilo de la parte de citas en linea*/
+/*final del estilo de la parte de citas en linea*/
+
+
+
+/*esto no sé donde va, averiguarlo luego-----------------------*/
+.img-small {
+  width: 200px; /* Cambia el tamaño según lo necesites */
+  height: 200px; /* Asegura que la imagen mantenga su relación de aspecto */
+}
+
+ /*FINAL  de codigo para usar la imagen para mostrar los datos cuando se le de click*/
+
+ /*Inicio de el codigo para modificar la carta de los servicios y todo lo que tenga que ver con esta carta principal*/
+ /*esto no se donde va averiguar luego o sino dejarlo en general------------------*/
+ .equipo-card-deservicios {
+  display: flex;
+  margin-top: 50px;
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+/*esto dejarlo en general-------------------------*/
+.container{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+
+
+
+
+
+
+/*esto no se donde va, averiguar luego o dejarlo en general------------------*/
+.atencion-card-deservicios {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 125px;
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+
+
+
+
+
+
+  /*Final de el codigo para modificar la carta de los servicios y todo lo que tenga que ver con esta carta principal*/
+
+  /*Inicio de parte final de testimonios*/
+
+
+
+
+
+  
+  /* Asegurar que el contenedor tenga suficiente espacio para mostrar varios testimonios a la vez */
+
+
+  
+  

@@ -1,0 +1,279 @@
+@import "generalh.css"
+
+/*margen-prin va para index-------------------------*/
+.margen-prin {
+    margin-top: -200px;
+}
+
+/*cartamin va para index-----------------------*/
+.cartamin {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+}
+
+/*tituloprincipal va para index-----------------*/
+.tituloprincipal {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+
+/*esto va en el index-------------------------------------------------------*/
+.consultLink {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+
+/*esto va en el index---------------------------*/
+.cardText {
+    display: none;
+    /* esto me esta ayudando a esconder el texto de los servicios*/
+}
+
+/*esto va en index----------------------------------------------*/
+#cardImage {
+    /* Estilos iniciales de la imagen */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/*esto va en index----------------------------------------------*/
+.cardImage {
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/*esto va en index----------------------------------------------*/
+.centradoservicios {
+    margin: 0 auto;
+    padding: 20px;
+    transition: width 0.3s, height 0.3s;
+    /* Agregar transiciones para el cambio de tamaño */
+}
+
+/*esto va en index----------------------------------------------*/
+.cardImage.img-small {
+
+    width: 100px;
+    height: 70px;
+
+
+}
+
+/*esto va en index----------------------------------------------*/
+.cartamin img {
+    width: 150px;
+    height: 150px;
+}
+
+/*esto va en index----------------------------------------------*/
+#cardText {
+    /* Estilos del texto descriptivo */
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/*esto va para index---------------------*/
+.equipo-imagenmodificada {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    flex: 0 0 339px;
+    /* Fijar el ancho de la imagen */
+
+}
+
+/*esto va para index---------------------*/
+.equipo-imagenmodificada img {
+    width: 500px;
+    height: 353px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+/*esto va para index---------------------*/
+.equipo-textopersonalizado {
+    flex: 1;
+    /* Permitir que el texto ocupe todo el espacio disponible */
+    max-height: 253px;
+    /* Altura máxima para el texto */
+    overflow: hidden;
+    /* Ocultar cualquier texto que desborde */
+}
+
+/*esto va para index---------------------*/
+.equipo-fuentepersonalizada {
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/*esto va para index---------------------*/
+.equipo-textojustificado {
+    text-align: justify;
+}
+
+/*esto va para index---------------------*/
+.atencion-imagenmodificada {
+    margin-right: 30px;
+    flex: 0 0 200px;
+    /* Fijar el ancho de la imagen */
+}
+
+/*esto va para index---------------------*/
+.atencion-imagenmodificada img {
+    width: 600px;
+    height: 350px;
+}
+
+/*esto va para index---------------------*/
+.atencion-textopersonalizado {
+    flex: 1;
+    /* Permitir que el texto ocupe todo el espacio disponible */
+
+
+}
+
+/*esto va para index---------------------*/
+.atencion-fuentepersonalizada {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/*esto va para index---------------------*/
+.atencion-textojustificado {
+    text-align: justify;
+}
+
+/*esto va para index---------------------*/
+.tituloequipo {
+
+    margin-bottom: 50px;
+}
+
+/*esto va para index---------------------*/
+.tituloprincipal {
+    margin-bottom: 50px;
+}
+
+/*esto va para index---------------------*/
+.cardbase-carta-principal {
+    cursor: grab;
+    gap: 10px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    /* Alineamos los testimonios al principio */
+    width: 100%;
+    /* Ocultamos el desplazamiento vertical */
+    margin-bottom: 50px;
+    /* Aseguramos que el contenedor tenga un ancho del 100% */
+    padding: 20px 0;
+    /* Agregamos relleno para evitar que los testimonios toquen los bordes del contenedor */
+}
+
+/*esto va para index---------------------*/
+.cardbase-carta-principal::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en Chrome y Safari */
+}
+
+/*esto va para index---------------------*/
+.testimonios-container {
+    display: inline-flex;
+    /* Hacemos que los testimonios se muestren en línea */
+    gap: 10px;
+    /* Espacio entre testimonios */
+    align-items: flex-start;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+/*esto va para index---------------------*/
+/* Ajuste para los testimonios en una sola fila */
+.testimonios-container .testimonio {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+/*esto va para index---------------------*/
+.testimonio {
+    flex-shrink: 0;
+    width: 300px;
+    /* Ancho de cada testimonio */
+}
+
+/*esto va para index---------------------*/
+.testimonio-card {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    word-wrap: break-word;
+    width: 220px;
+    /*lo de abajo ponerlo arriba*/
+    border: var(--Negro) solid 1px;
+    padding: 1em;
+    /*relleno*/
+    margin-bottom: 2em;
+    box-shadow: 5px 7px 10px var(--Azul);
+    /*lo de arriba ponerlo arriba*/
+}
+
+/* Asegurar que el contenedor tenga suficiente espacio para mostrar varios testimonios a la vez */
+/*esto va para index---------------------*/
+.testimonios-container {
+    display: inline-flex;
+    gap: 10px;
+    /* Espacio entre testimonios */
+    width: 1000px;
+    justify-content: flex-start;
+}
+
+/*esto va para index---------------------*/
+.testimoniodis {
+    display: flex;
+    /* Hace que los testimonios estén en línea */
+
+}
+
+/*esto va para index---------------------*/
+.testimonio-carta {
+    font-size: 13px;
+}
+
+/*esto va para index---------------------*/
+.contenedortestigos {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    /* Agregamos posición relativa para que los testimonios tengan un punto de referencia */
+    margin-bottom: 180px;
+}

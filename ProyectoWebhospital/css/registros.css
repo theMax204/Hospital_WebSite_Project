@@ -1,0 +1,101 @@
+/*esto va para registros-------------------------------*/
+.containerreg{
+  height: 100vh;
+  display: flexbox;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+
+
+  
+}
+
+/*estilo de animacion de login o register*/
+/*esto va para registros-------------------------------*/
+
+.tabreg {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+}
+/*esto va para registros-------------------------------*/
+
+.formaregistro {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  -moz-transition: opacity 0.3s ease, visibility 0.3s ease;
+  -ms-transition: opacity 0.3s ease, visibility 0.3s ease;
+  -o-transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/*esto va para registros-------------------------------*/
+
+.formaregistro.active {
+  opacity: 1;
+  visibility: visible;
+}
+/*esto va para registros --------------------------------*/
+.containerregistro{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/*esto va para registros --------------------------------*/
+
+.contenidologin{
+  border: var(--Negro) solid 1px;
+  padding: 1em;/*relleno*/
+  margin-bottom: 2em;
+  box-shadow: 5px 7px 10px var(--Azul);
+  background-color: var(--Blanco);
+  width: 50vh;
+height: 1100px;
+
+}
+/*esto va para registros --------------------------------*/
+
+.tabsreg{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/*esto va para registros --------------------------------*/
+
+.tabreg{
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+/*esto va en registros--------------------------------*/
+.tabreg-login.active,.tabreg-register.active {
+margin-bottom: 5px;
+  border-bottom: none;
+}
+/*esto va en registros--------------------------------*/
+
+.formaregistro {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+/*esto va en registros--------------------------------*/
+
+.formaregistro.active {
+  display: block;
+}
+/*esto va en registros--------------------------------*/
+
+.formaregistro h2 {
+  margin-bottom: 20px;
+}
+/*esto va en registros--------------------------------*/
+
+.formaregistro-groupreg {
+  margin-bottom: 20px;
+}

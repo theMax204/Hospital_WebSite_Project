@@ -1,0 +1,131 @@
+@import "generalh.css"
+
+/*esto va para mapa-------------------------*/
+.containermapa {
+    text-align: center;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: -100px;
+}
+
+
+
+/*esto va para mapa-------------------------*/
+
+.cardbasemapa {
+    border: var(--Negro) solid 1px;
+    padding: 1em;
+    /*relleno*/
+    margin-bottom: 2em;
+    box-shadow: 5px 7px 10px var(--Azul);
+    background-color: var(--Blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    cursor: pointer;
+    background-color: var(--Blanco);
+    text-align: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/*esto va para mapa-------------------------*/
+
+.imagensedemapa {
+    display: flex;
+    align-items: center;
+
+}
+
+/*esto va para mapa-------------------------*/
+
+.imgmapa {
+    height: 600px;
+
+    transition: max-width 0.3s ease;
+    -webkit-transition: max-width 0.3s ease;
+    -moz-transition: max-width 0.3s ease;
+    -ms-transition: max-width 0.3s ease;
+    -o-transition: max-width 0.3s ease;
+}
+
+/*esto va para mapa-------------------------*/
+
+.titulossedes {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    /* Evita el salto de línea */
+    margin-bottom: 45px;
+    /* Espaciado inferior */
+    padding-left: 10px;
+}
+
+/*esto va para mapa-------------------------*/
+
+.titulossedesecu {
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/*esto va para mapa-------------------------*/
+
+.horario {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/*esto va para mapa-------------------------*/
+
+.horario p {
+    margin: 20px;
+    /* Eliminar los márgenes por defecto de los párrafos */
+    padding-left: 10px;
+    /* Añadir un pequeño espaciado a la izquierda */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*esto va para mapa-------------------------*/
+
+
+
+/*esto va para mapa-------------------------*/
+
+.imagen-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+/*esto va para mapa-------------------------*/
+
+.imagen-containermapados {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10px;
+    /* Espacio entre imagen y mapa */
+    margin-top: 50px;
+}
+
+/*esto va para mapa-------------------------*/
+
+.personal-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+}

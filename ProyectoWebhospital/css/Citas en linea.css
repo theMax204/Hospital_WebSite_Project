@@ -1,0 +1,27 @@
+@import "generalh.css"
+
+/*esto va para citas en linea--------------*/
+.cardcitas {
+    border: var(--Negro) solid 1px;
+    padding: 1em;
+    /*relleno*/
+    margin-bottom: 2em;
+    box-shadow: 5px 7px 10px var(--Azul);
+    max-width: 1500px;
+    max-height: 1000px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 150px;
+    background-color: var(--Blanco);
+    margin-bottom: 150px;
+}
+
+/*esto va en citas en linea--------------------------------*/
+.textomodificadotest {
+    border: var(--Negro) solid 1px;
+    padding: 1em;
+    /*relleno*/
+    margin-bottom: 2em;
+    box-shadow: 5px 7px 10px var(--Azul);
+}
