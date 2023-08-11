@@ -1,0 +1,8 @@
+.centered-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.centered-buttons button {
+  margin: 0 5px;
+}
