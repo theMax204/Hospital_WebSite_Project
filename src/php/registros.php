@@ -108,7 +108,7 @@
                         <button class="next btn btn-primary">Siguiente</button>
                     </form>
                     <!-- Register form -->
-                    <form id="tabreg-register" class="formaregistro uiregister" enctype="multipart/form-data" action="procesarregistro.php" method="POST">
+                    <form id="tabreg-register" class="formaregistro uiregister" enctype="multipart/form-data" action="registros.php" method="POST"> <!--cambie la ubicacion del action-->
                         <h2 class="mb-4">Register</h2>
                         <div class="mb-3">
                             <label for="registerUsername" class="form-label">Cedula</label>
