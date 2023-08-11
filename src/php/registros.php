@@ -141,7 +141,7 @@
                         <div class="mb-3">
                             <label for="registerRole" class="form-label">Rol</label>
                             <select id="registerRole" name="registerRole" class="uiregister form-control"> <!--añadi esta seccion para que el usuario puede escoger que tipo de rol es-->
-                                <option value="Normal">Normal</option> 
+                                <option value="Normal">Normal</option>
                                 <option value="Admin">Admin</option>
                             </select>
                         </div>
@@ -199,6 +199,16 @@
             $password = $_POST["registerPassword"];
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
             $rolNombre = mysqli_real_escape_string($conn, $_POST["registerRole"]); //añadi esto para capturar el valor seleccionado y buscar el ID para la tabla de roles
+            $selectedRole = $_POST['registerRole'];
+
+            // Mapear el rol seleccionado a su ID correspondiente en la tabla 'roles'
+            $rolesMapping = [
+                'Normal' => 1,
+                'Admin' => 2
+            ];
+
+            // Obtener el ID del rol seleccionado
+            $idRol = $rolesMapping[$selectedRole];
 
             // Buscar el ID del rol en la base de datos
             $query = "SELECT id FROM roles WHERE nombre = '$rolNombre'";
@@ -212,10 +222,11 @@
                 echo "Error: Rol no encontrado";
                 exit();
             }
-                     //lo de arriba tanbien es para capturar el valor seleccionado y buscar el ID para la tabla de roles
+            //lo de arriba tanbien es para capturar el valor seleccionado y buscar el ID para la tabla de roles
 
             $sql = "INSERT INTO usuarios (cedula, nombre, email, telefono, apellidos, fecha_nacimiento, password, rol_id) 
                     VALUES ('$cedula', '$nombre', '$email', '$telefono', '$apellidos', '$fechaNacimiento', '$hashedPassword', '$rolId')";
+            $result = mysqli_query($connection, $query);
             if ($conn->query($sql) === TRUE) {
                 $response["status"] = "success";
                 // Muestra el modal de registro exitoso
