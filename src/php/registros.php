@@ -11,7 +11,12 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/procesarRegistro.css">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://kit.fontawesome.com/97cef9f55a.js" crossorigin="anonymous" rel="stylesheet">
 </head>
@@ -262,8 +267,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/principal.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/principal.js"></script>
 </body>
 
 </html>
