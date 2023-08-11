@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="./css/logins.css" />
   </head>
 
   <body>
@@ -46,54 +46,64 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./citas.html">Citas en linea</a>
+              <a class="nav-link" href="citas.html">Citas en linea</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/src/mapa.html">Ubicaciones</a>
+              <a class="nav-link" href="mapa.html">Ubicaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/src/Usuarios.html">Registrarse</a>
+              <a class="nav-link" href="Usuarios.html">Registrarse</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Tipos de registro -->
+    <!-- Login -->
     <section>
-      <div class="container mt-5 text-center mb-5">
-        <div class="row">
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="card">
-              <img
-                src="/src/img/usuarios.png"
-                class="card-img-top"
-                with="100%"
-                height="400px"
-                alt="administrativo"
-              />
               <div class="card-body">
-                <h5 class="card-title">Cliente</h5>
-                <p class="card-text">Acceder como un cliente</p>
-                <a href="login-cliente.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <img
-                src="/src/img/administrativo.png"
-                class="card-img-top"
-                with="100%"
-                height="400px"
-                alt="cliente"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Administrativos</h5>
-                <p class="card-text">Acceder como un administrativo</p>
-                <a href="login-administrativo.html" class="btn btn-primary"
-                  >Acceder</a
-                >
+                <h5 class="card-title">Iniciar Sesión</h5>
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo Electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Ingrese su correo"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Ingrese su contraseña"
+                      required
+                    />
+                  </div>
+                  <div class="centered-buttons">
+                    <button type="submit" class="btn btn-primary">
+                      Acceder
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Cancelar
+                    </button>
+                  </div>
+                </form>
+                <div class="mt-3 text-center">
+                  <a href="registro-cliente.html" class="btn btn-lg btn-success"
+                    >Registrarse</a
+                  >
+                </div>
               </div>
             </div>
           </div>
