@@ -1,0 +1,35 @@
+/* Variables*/
+
+:root {
+  --Azul: #003264;
+  --Grisclaro: #cbd6df;
+  --Gris: #c7c8ca;
+  --Blanco: #ffffff;
+  --Negro: #000000;
+  --Fuente: "Oswald";
+}
+
+/* Navbar  */
+
+nav {
+  background: var(--Azul);
+  color: var(--Blanco);
+}
+
+.navbar-toggler {
+  color: var(--Gris);
+  background-color: var(--Blanco);
+}
+
+.nav-link {
+  color: var(--Blanco);
+}
+
+.nav-link:hover {
+  color: var(--Gris);
+}
+
+/* Footer */
+ul.list-unstyled a {
+  text-decoration: none;
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Clínica Costarricense</title>
+    <link rel="shortcut icon" href="src/img/icons/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo-web"
+            src="/src/img/icons/logo.png"
+            width="100"
+            height="50"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/php/citas-online.php"
+                >Citas en linea</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/mapa.html">Ubicaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/php/registros.php">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <section>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="src/img/slides/slide_1.jpg"
+              class="d-block w-100"
+              alt="Slide 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>¡Bienvenidos a nuestro hospital!</h5>
+              <p>
+                Ofrecemos servicios de salud de alta calidad para la comunidad.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="src/img/slides/slide-2.jpg"
+              class="d-block w-100"
+              alt="Slide 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cuidado personalizado</h5>
+              <p>
+                Nuestro equipo de médicos y enfermeras está comprometido con tu
+                bienestar.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="src/img/slides/slide-3.jpg"
+              class="d-block w-100"
+              alt="Slide 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Los mejores del país</h5>
+              <p>Los mejores del país, para que tú puedas disfrutar más.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Texto -->
+    <section>
+      <div class="container mt-5">
+        <section>
+          <h2 class="text-center">Hospital Clínica Costarricense</h2>
+          <p class="text-center">
+            El Hospital Clínica Costarricense se enorgullece de ofrecer atención
+            médica de calidad y compasiva a nuestra comunidad. Nuestro equipo de
+            médicos altamente capacitados, enfermeras dedicadas y personal de
+            apoyo comprometido trabaja incansablemente para garantizar que cada
+            paciente reciba la atención que necesita. Equipado con tecnología de
+            vanguardia y las últimas innovaciones médicas, nuestro hospital está
+            preparado para tratar una amplia gama de condiciones médicas, desde
+            emergencias hasta tratamientos especializados. Valoramos la salud y
+            el bienestar de nuestros pacientes por encima de todo, y nos
+            esforzamos por brindar un entorno seguro y cómodo para su
+            recuperación.
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Contenido -->
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="card-body">
+          <div class="row gy-5 margen-prin">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/cardiologia.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Cardiologia</p>
+                  <p class="cardText">
+                    La cardiología se considera un campo complejo; por esta
+                    razón, muchos cardiólogos se especializan en diferentes
+                    áreas. Nuestros especialistas son cardiólogos clínicos que
+                    se dedican al diagnóstico, el tratamiento farmacológico.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/dermatologia.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Dermatología</p>
+                  <p class="cardText">
+                    La piel es el órgano más extenso del cuerpo, por eso en el
+                    Hospital Metropolitano tenemos a los mejores profesionales
+                    para prevenir, diagnosticar y tratar todas las patologías
+                    que puedan afectarla.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/emergencias.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Emergencias</p>
+                  <p class="cardText">
+                    La piel es el órgano más extenso del cuerpo, por eso en el
+                    Hospital Metropolitano tenemos a los mejores profesionales
+                    para prevenir, diagnosticar y tratar todas las patologías
+                    que puedan afectarla.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/farmacia.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Farmacia</p>
+                  <p class="cardText">
+                    Sabemos que el malestar y las enfermedades no conocen de
+                    horarios; por lo tanto, ponemos a su disposición nuestro
+                    servicio de Farmacia las 24 horas, los 7 días de la semana
+                    en nuestras sedes de San José, Lindora, Liberia y Huacas
+                    (Guanacaste).
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/fisiatria.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Fisiatría</p>
+                  <p class="cardText">
+                    En el Hospital Metropolitano, contamos con profesionales que
+                    se encargan de ayudar a las personas a recobrar las
+                    funciones corporales que perdieron debido a enfermedades o
+                    lesiones.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/gastroenterologia.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Gastroenterología</p>
+                  <p class="cardText">
+                    Contamos con médicos con gran experiencia y capacitación en
+                    el manejo de enfermedades del tracto gastrointestinal y el
+                    hígado.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 7 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/geriatria.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Geriatría</p>
+                  <p class="cardText">
+                    Un especialista en geriatría se dedica a estudiar las
+                    enfermedades que aquejan a los adultos mayores y a las
+                    personas que están a su cuidado. Nuestros especialistas
+                    consideran los aspectos clínicos que pueden ayudar al
+                    tratamiento y rehabilitación del paciente, integrando los
+                    diferentes aspectos familiares que lograrán su bienestar.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 8 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/ginecologia.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Ginecología</p>
+                  <p class="cardText">
+                    Nuestros ginecólogos ofrecen atención especializada a todas
+                    las patologías relacionadas con los órganos femeninos como
+                    el útero, la vagina y los ovarios, sin dejar de lado la
+                    prevención de enfermedades futuras durante cada etapa del
+                    desarrollo de la mujer.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 9 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/medicina-general.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Medicina General</p>
+                  <p class="cardText">
+                    En el Hospital Metropolitano tenemos a su servicio un equipo
+                    profesional de médicos que constituyen el primer nivel de
+                    atención médica. Esta se considera imprescindible para la
+                    prevención, detección, tratamiento y seguimiento de las
+                    enfermedades con el propósito de mantener el bienestar de
+                    todos los pacientes.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 10 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/vascular-periferico.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Vascular Periférico</p>
+                  <p class="cardText">
+                    La enfermedad vascular periférica (EVP) consiste en el daño
+                    u obstrucción en los vasos sanguíneos más alejados del
+                    corazón: las arterias y venas periféricas y el sistema
+                    linfático. El especialista en la enfermedad vascular
+                    periférica realiza procedimientos quirúrgicos
+                    endovasculares, considerados mínimamente invasivos.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 11 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/nutricion.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Nutrición</p>
+                  <p class="cardText">
+                    De la mano del Centro de Nutrición Clínica (CNC), ofrecemos
+                    servicios de nutrición personalizados para nuestros
+                    pacientes. Nuestro enfoque es la alimentación saludable, la
+                    pérdida de peso, la nutrición clínica, entre otras etapas
+                    importantes de los usuarios como lo es el embarazo, el
+                    deporte, los niños y adolescentes.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 12 -->
+            <div class="col-md-4">
+              <div class="cardbase cardio-card">
+                <div class="cartamin card-body">
+                  <img
+                    src="src/img/symbols/odontologia.png"
+                    alt="icon"
+                    class="cardImage"
+                  />
+                  <p class="centradoservicios">Odontología</p>
+                  <p class="cardText">
+                    Con el apoyo de Drs. Dent, brindamos servicios de
+                    odontología general, ortodoncia, odontogeriatría,
+                    radiografías y tomografías, odontopediatría, cirugía
+                    maxilofacial, periodoncia, endodoncia y mucho más.
+                  </p>
+                  <p class="consultLink" style="display: none">
+                    <a href="Citas en linea.php?servicio=1">Consulta aquí</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="src/img/icons/logo.png" alt="Logo" class="img-fluid" />
+          </div>
+          <div class="col-md-3">
+            <h5>Hospital Clínica Costarricense</h5>
+            <p>
+              Somos una organización sin fines de lucro donde hemos articulado y
+              estructurado una red de servicios de salud con una fuerte
+              inversión en los últimos años para fortalecer nuestros programas
+              sociales. Tenemos algo más que nos mueve, y es nuestro Propósito
+              Transformador Masivo: "Salvar vidas y cuidar la humanidad"
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Sedes</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">San José</a></li>
+              <li><a href="#">Quepos</a></li>
+              <li><a href="#">Liberia</a></li>
+              <li><a href="#">San Carlos</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contáctenos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">E-mail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
