@@ -41,10 +41,10 @@
                             <a class="nav-link" href="../php/citas-online.php">Citas en línea</a> <!--src/php/citas-online.php-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/src/mapa.html">Ubicaciones</a> <!--src/mapa.html-->
+                            <a class="nav-link" href="../mapa.html">Ubicaciones</a> <!--src/mapa.html-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../php/registros.php">Registrarse</a> <!--src/php/registros.php-->
+                            <a class="nav-link" href="./registros.php">Registrarse</a> <!--src/php/registros.php-->
                         </li>
                     </ul>
                 </div>

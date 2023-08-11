@@ -32,7 +32,7 @@
               <a class="nav-link" href="./citas-online.php">Citas en línea</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/src/mapa.html">Ubicaciones</a>
+              <a class="nav-link" href="../mapa.html">Ubicaciones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./registros.php">Registrarse</a>
