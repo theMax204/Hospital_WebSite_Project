@@ -26,16 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav menu">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="src/php/citas-online.php">Citas en línea</a>
+              <a class="nav-link" href="./citas-online.php">Citas en línea</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="src/mapa.html">Ubicaciones</a>
+              <a class="nav-link" href="/src/mapa.html">Ubicaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="src/php/registros.php">Registrarse</a>
+              <a class="nav-link" href="./registros.php">Registrarse</a>
             </li>
           </ul>
         </div>

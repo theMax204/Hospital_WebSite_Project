@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <img src="src/img/icons/logo.png" alt="Logo" class="img-fluid" />
+            <img src="../img/icons/logo.png" alt="Logo" class="img-fluid" /> 
           </div>
           <div class="col-md-3">
             <h5>Hospital Clínica Costarricense</h5>
