@@ -116,7 +116,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="registerPassword" class="form-label">Nombre</label>
-                            <input type="text" id="registerUsername" name="registerUsername" class="uiregister form-control" placeholder="Nombre">
+                            <input type="text" id="registerUsernameReg" name="registerUsername" class="uiregister form-control" placeholder="Nombre"> <!--Cambie el registerUsername a registerUsernameReg-->
                         </div>
                         <div class="mb-3">
                             <label for="registerEmail" class="form-label">Email</label>
@@ -137,6 +137,13 @@
                         <div class="mb-3">
                             <label for="registerPassword" class="form-label">Contraseña</label>
                             <input type="password" id="registerPassword" name="registerPassword" class="uiregister form-control" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerRole" class="form-label">Rol</label>
+                            <select id="registerRole" name="registerRole" class="uiregister form-control"> <!--añadi esta seccion para que el usuario puede escoger que tipo de rol es-->
+                                <option value="Normal">Normal</option> 
+                                <option value="Admin">Admin</option>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label for="registerProfileImage" class="form-label">Imagen de perfil</label>
@@ -191,8 +198,24 @@
             $fechaNacimiento = $_POST["registerBirthDate"];
             $password = $_POST["registerPassword"];
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO usuarios (cedula, nombre, email, telefono, apellidos, fecha_nacimiento, password) 
-                    VALUES ('$cedula', '$nombre', '$email', '$telefono', '$apellidos', '$fechaNacimiento', '$hashedPassword')";
+            $rolNombre = mysqli_real_escape_string($conn, $_POST["registerRole"]); //añadi esto para capturar el valor seleccionado y buscar el ID para la tabla de roles
+
+            // Buscar el ID del rol en la base de datos
+            $query = "SELECT id FROM roles WHERE nombre = '$rolNombre'";
+            $result = $conn->query($query);
+
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                $rolId = $row["id"];
+            } else {
+                // Manejar el error si no se encuentra el rol
+                echo "Error: Rol no encontrado";
+                exit();
+            }
+                     //lo de arriba tanbien es para capturar el valor seleccionado y buscar el ID para la tabla de roles
+
+            $sql = "INSERT INTO usuarios (cedula, nombre, email, telefono, apellidos, fecha_nacimiento, password, rol_id) 
+                    VALUES ('$cedula', '$nombre', '$email', '$telefono', '$apellidos', '$fechaNacimiento', '$hashedPassword', '$rolId')";
             if ($conn->query($sql) === TRUE) {
                 $response["status"] = "success";
                 // Muestra el modal de registro exitoso
