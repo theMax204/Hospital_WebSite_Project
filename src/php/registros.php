@@ -11,7 +11,12 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/procesarRegistro.css">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://kit.fontawesome.com/97cef9f55a.js" crossorigin="anonymous" rel="stylesheet">
 </head>
@@ -30,16 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Principal</a>
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Citas en linea.php">Citas en línea</a>
+                            <a class="nav-link" href="../php/citas-online.php">Citas en línea</a> <!--src/php/citas-online.php-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Mapa.php">Mapa</a>
+                            <a class="nav-link" href="../mapa.html">Ubicaciones</a> <!--src/mapa.html-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registros.php">Registrarse</a>
+                            <a class="nav-link" href="./registros.php">Registrarse</a> <!--src/php/registros.php-->
                         </li>
                     </ul>
                 </div>
@@ -108,7 +113,7 @@
                         <button class="next btn btn-primary">Siguiente</button>
                     </form>
                     <!-- Register form -->
-                    <form id="tabreg-register" class="formaregistro uiregister" enctype="multipart/form-data" action="procesarregistro.php" method="POST">
+                    <form id="tabreg-register" class="formaregistro uiregister" enctype="multipart/form-data" action="registros.php" method="POST"> <!--cambie la ubicacion del action-->
                         <h2 class="mb-4">Register</h2>
                         <div class="mb-3">
                             <label for="registerUsername" class="form-label">Cedula</label>
@@ -116,7 +121,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="registerPassword" class="form-label">Nombre</label>
-                            <input type="text" id="registerUsername" name="registerUsername" class="uiregister form-control" placeholder="Nombre">
+                            <input type="text" id="registerUsernameReg" name="registerUsername" class="uiregister form-control" placeholder="Nombre"> <!--Cambie el registerUsername a registerUsernameReg-->
                         </div>
                         <div class="mb-3">
                             <label for="registerEmail" class="form-label">Email</label>
@@ -137,6 +142,13 @@
                         <div class="mb-3">
                             <label for="registerPassword" class="form-label">Contraseña</label>
                             <input type="password" id="registerPassword" name="registerPassword" class="uiregister form-control" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerRole" class="form-label">Rol</label>
+                            <select id="registerRole" name="registerRole" class="uiregister form-control"> <!--añadi esta seccion para que el usuario puede escoger que tipo de rol es-->
+                                <option value="Normal">Normal</option>
+                                <option value="Admin">Admin</option>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label for="registerProfileImage" class="form-label">Imagen de perfil</label>
@@ -191,8 +203,35 @@
             $fechaNacimiento = $_POST["registerBirthDate"];
             $password = $_POST["registerPassword"];
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO usuarios (cedula, nombre, email, telefono, apellidos, fecha_nacimiento, password) 
-                    VALUES ('$cedula', '$nombre', '$email', '$telefono', '$apellidos', '$fechaNacimiento', '$hashedPassword')";
+            $rolNombre = mysqli_real_escape_string($conn, $_POST["registerRole"]); //añadi esto para capturar el valor seleccionado y buscar el ID para la tabla de roles
+            $selectedRole = $_POST['registerRole'];
+
+            // Mapear el rol seleccionado a su ID correspondiente en la tabla 'roles'
+            $rolesMapping = [
+                'Normal' => 1,
+                'Admin' => 2
+            ];
+
+            // Obtener el ID del rol seleccionado
+            $idRol = $rolesMapping[$selectedRole];
+
+            // Buscar el ID del rol en la base de datos
+            $query = "SELECT id FROM roles WHERE nombre = '$rolNombre'";
+            $result = $conn->query($query);
+
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                $rolId = $row["id"];
+            } else {
+                // Manejar el error si no se encuentra el rol
+                echo "Error: Rol no encontrado";
+                exit();
+            }
+            //lo de arriba tanbien es para capturar el valor seleccionado y buscar el ID para la tabla de roles
+
+            $sql = "INSERT INTO usuarios (cedula, nombre, email, telefono, apellidos, fecha_nacimiento, password, rol_id) 
+                    VALUES ('$cedula', '$nombre', '$email', '$telefono', '$apellidos', '$fechaNacimiento', '$hashedPassword', '$rolId')";
+            $result = mysqli_query($connection, $query);
             if ($conn->query($sql) === TRUE) {
                 $response["status"] = "success";
                 // Muestra el modal de registro exitoso
@@ -228,8 +267,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/principal.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/principal.js"></script>
 </body>
 
 </html>

@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#tabreg-register");
     const cedulaInput = document.querySelector("#registerCedula");
-    const nombreInput = document.querySelector("#registerUsername");
+    const nombreInput = document.querySelector("#registerUsernameReg"); //modifique registerUsername a registerUsernameReg
     const emailInput = document.querySelector("#registerEmail");
     const telefonoInput = document.querySelector("#registerPhone");
     const apellidosInput = document.querySelector("#registerLastName");
